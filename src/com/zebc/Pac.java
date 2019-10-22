@@ -1,9 +1,11 @@
+package com.zebc;
+
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import javax.swing.*;
 
 public class Pac {
-    Image img = new ImageIcon ("D:\\Project\\Pacmannew\\src\\main\\resources\\Pacman.png").getImage();
+    Image img = new ImageIcon ("D:/Project/Java/pacman/resources/Pacman.png").getImage();
 
     //Ќужно найти пнг с закрытым ртом с прозрачностью
     //Image img_0 = new ImageIcon ("res/Pacman_0.png").getImage();
