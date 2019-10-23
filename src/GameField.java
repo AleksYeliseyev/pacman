@@ -1,5 +1,3 @@
-package com.zebc;
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -19,11 +17,10 @@ public class GameField extends JPanel implements ActionListener {
 
     Timer mainTimer = new Timer(50, this); // timer 200
 
-    Image img = new ImageIcon ("D:/Project/JAVA/pacman/resources/Background.png").getImage();
+    Image img = new ImageIcon ("D:\\Project\\JAVA\\Pacman\\resources\\Background.png").getImage();
 
     Pac p = new Pac();
-    //Enemy enem = new Enemy();
-
+    Enemy enem = new Enemy();
 
 
     public GameField() {
@@ -45,7 +42,7 @@ public class GameField extends JPanel implements ActionListener {
 
     public void actionPerformed (ActionEvent e) {
             p.move();
-            //enem.move();
+            enem.move();
             repaint();
         }
 
@@ -53,7 +50,7 @@ public class GameField extends JPanel implements ActionListener {
         g = (Graphics2D) g;
         g.drawImage(img, 0, 0, null);
         g.drawImage(p.img, p.x, p.y, null);
-        //g.drawImage(enem.img, enem.x, enem.y, null);
+        g.drawImage(enem.img, enem.x, enem.y, null);
         g.setColor(Color.WHITE);
         g.drawString("x=" + p.x + "  y=" + p.y, 100,100);
         g.drawString("xf=" + p.x/20 + "  yf=" + p.y/20, 100,130);

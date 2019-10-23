@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 
 public class Enemy {
-    Image img = new ImageIcon ("D:\\Project\\Java\\pacmannew\\resources\\Blinky.png").getImage();
+    Image img = new ImageIcon ("D:\\Project\\JAVA\\Pacman\\resources\\Blinky.png").getImage();
 
     char course = 'd'; // direction 'u' - 'd' - 'l' - 'r'
     boolean life = true; // live or die

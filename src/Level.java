@@ -1,5 +1,3 @@
-package com.zebc;
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
@@ -10,7 +8,7 @@ public class Level {
 
         FileReader fr = null;
         try {
-            fr = new FileReader("D:/Project/Java/pacman/resources/Level1string.txt");
+            fr = new FileReader("D:/Project/JAVA/Pacman/resources/Level1string.txt");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

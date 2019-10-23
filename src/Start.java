@@ -1,5 +1,3 @@
-package com.zebc;
-
 import javax.swing.JFrame;
 
 public class Start {
